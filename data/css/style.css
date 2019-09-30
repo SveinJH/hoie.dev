@@ -28,7 +28,35 @@ body {
     font-weight: 300;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 33vh);
+    grid-template-rows: repeat(3, 31vh);
+}
+
+.grid-container-nav {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 50px;
+}
+
+.grid-item-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item-nav:hover {
+    background: linear-gradient(
+        to right bottom,
+        rgb(27, 103, 179) 0%,
+        rgb(1, 158, 158) 100%
+    );
+}
+
+.about {
+    grid-column: 7;
+}
+
+.nav {
+    grid-column: 8;
 }
 
 .grid-item {
