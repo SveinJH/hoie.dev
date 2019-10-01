@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
-    color: #ffffff;
+    color: #e5e6f1;
     line-height: 1.6;
     font-weight: 300 !important;
     background: rgb(46, 134, 222);
@@ -28,7 +28,7 @@ body {
     font-weight: 300;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 31vh);
+    grid-template-rows: repeat(5, 160px);
 }
 
 .grid-container-nav {
@@ -37,49 +37,53 @@ body {
     grid-template-rows: 50px;
 }
 
-.grid-item-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.grid-item-nav:hover {
-    background: linear-gradient(
-        to right bottom,
-        rgb(27, 103, 179) 0%,
-        rgb(1, 158, 158) 100%
-    );
-}
-
-.about {
-    grid-column: 7;
-}
-
-.nav {
-    grid-column: 8;
-}
-
 .grid-item {
     font-size: 1.8rem;
-    grid-column: 2 / span 4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.item-contact {
-    font-size: 1.6rem;
+.item-projects {
+    grid-column: 2 / span 2;
 }
 
-.item-construction {
-    font-size: 2.5rem;
+.item-card {
+    border-radius: 5px;
+    cursor: pointer;
+    border: 3px dotted #e5e6f1;
+    transition: all 0.3s;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.item-card:hover {
+    border: 3px solid black;
+}
+
+.item-card:hover p {
+    transform: translateY(-10px);
+}
+
+.item-about {
+    grid-column: 4 / span 2;
+}
+
+.item-info,
+.item-construction,
+.item-contact {
+    grid-column: 2 / span 4;
+}
+
+p {
+    transition: transform 0.3s;
+}
+
+.icon-wrapper i {
+    font-size: 60px;
 }
 
 .name {
-    font-size: 3rem;
-}
-
-.occupation {
-    font-size: 1.4rem;
+    font-size: 2.5rem;
 }
