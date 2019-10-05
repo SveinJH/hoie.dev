@@ -1,5 +1,36 @@
 .header {
-    background-color: $color-primary-dark;
+    &__text {
+        background-color: $color-background;
+        grid-column: full-start / col-end 6;
+        padding: 10rem;
+        padding-left: 25vw;
 
-    grid-column: full-start / full-end;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content minmax(6rem, min-content) 1fr;
+        justify-content: start;
+    }
+
+    &__btn {
+        justify-self: start;
+        align-self: start;
+
+        margin-right: 1.5rem;
+    }
+
+    &__picture {
+        grid-column: col-start 7 / full-end;
+        background-color: $color-background;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__logo {
+    }
+}
+
+.description {
+    color: #fff;
 }

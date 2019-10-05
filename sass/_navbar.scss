@@ -1,33 +1,44 @@
-.navbar {
-    background-color: $color-primary;
-
-    grid-column: full-start / full-end;
-}
-
 .nav {
-    font-size: 1.8rem;
-
+    background-color: $color-grey-dark-2;
+    grid-column: full-start / full-end;
+    font-size: 1.7rem;
     list-style: none;
 
     display: grid;
-    grid-template-columns: repeat(8, minmax(min-content, 1fr));
-    grid-template-rows: 5rem;
+    grid-template-columns: 1fr repeat(4, minmax(min-content, 1fr)) 1fr;
+    grid-template-rows: 6rem;
+    box-shadow: 0 0.7rem 0.8rem rgba(0, 0, 0, 0.445);
+    z-index: 1;
 
     &__item {
     }
 
+    &__logo {
+        display: block;
+        width: 58%;
+        margin-left: 21%;
+        height: 100%;
+    }
+
     &__link:link,
     &__link:visited {
-        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100%;
+        width: 100%;
+        color: $color-font-primary;
         text-decoration: none;
         font-family: $font-primary;
         text-transform: uppercase;
         text-align: center;
-        display: block;
+
+        transition: background-color 0.27s;
     }
 
     &__link:hover,
     &__link:active {
-        background-color: $color-primary-light;
+        background-color: $color-grey-dark-1;
     }
 }

@@ -1,22 +1,24 @@
 // Color Variables
-$color-background: #181818;
-$color-background-light: #181818af;
+$color-background: #1d1d1d;
+$color-background-light: #181818ee;
 
 $color-font-primary: #eee;
 
 $color-primary: #30336b;
 $color-primary-dark: #130f40;
 
-$color-secondary: #4834d4;
+$color-secondary: #786fa6;
 
 $color-grey-light-1: #f1efee;
-$color-grey-light-2: #aaa;
+$color-grey-light-2: #dddddd;
 
-$color-grey-dark-1: #394032;
-$color-grey-dark-2: #1e2019;
+$color-grey-dark-0: #227093;
+$color-grey-dark-1: #1f6585;
+$color-grey-dark-2: #1c5b77;
 
 // Font variables
 $font-primary: 'Josefin Sans', sans-serif;
+$font-secondary: 'Montserrat', sans-serif;
 
 *,
 *::before,
@@ -33,7 +35,7 @@ html {
 
 body {
     font-family: $font-primary;
-    color: $color-grey-dark-2;
+    color: $color-font-primary;
     font-weight: 300;
     line-height: 1.6;
 }
@@ -48,7 +50,7 @@ body > * {
 
 .container {
     display: grid;
-    grid-template-rows: 5rem 80vh repeat(6, min-content);
+    grid-template-rows: 6rem 80vh repeat(6, min-content);
     grid-template-columns:
         [full-start] minmax(6rem, 1fr) [center-start] repeat(
             8,
