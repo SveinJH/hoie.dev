@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  color: #1e2019;
+  font-weight: 300;
+  line-height: 1.6; }
+
+/*
+body > * {
+    padding: 1rem;
+    color: red;
+    font-size: 1.6rem;
+}
+*/
+.container {
+  display: grid;
+  grid-template-rows: 5rem 80vh repeat(6, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.heading-1, .heading-2, .heading-3, .heading-4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; }
+
+.heading-1 {
+  font-size: 4.5rem; }
+
+.heading-2 {
+  font-size: 4rem; }
+
+.heading-3 {
+  font-size: 1.6rem; }
+
+.heading-4 {
+  font-size: 1.9rem; }
+
+.navbar {
+  background-color: #30336b;
+  grid-column: full-start / full-end; }
+
+.nav {
+  font-size: 1.8rem;
+  list-style: none;
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(8, minmax(min-content, 1fr));
+  grid-template-rows: 5rem; }
+  .nav__link:link, .nav__link:visited {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    display: block; }
+
+.header {
+  background-color: #130f40;
+  grid-column: full-start / full-end; }
+
+.about__text {
+  background-color: #181818;
+  grid-column: center-start / col-end 4; }
+
+.about__pictures {
+  background-color: #181818af;
+  grid-column: col-start 5 / center-end; }
+
+.skills {
+  background-color: #4834d4;
+  grid-column: center-start / center-end; }
+
+.projects {
+  background-color: #f1efee;
+  grid-column: full-start / full-end; }
+
+.contact {
+  background-color: #aaa;
+  grid-column: center-start / center-end; }
+
+.footer {
+  background-color: #1e2019;
+  grid-column: full-start / full-end; }

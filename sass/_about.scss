@@ -1,0 +1,13 @@
+.about {
+    &__text {
+        background-color: $color-background;
+
+        grid-column: center-start / col-end 4;
+    }
+
+    &__pictures {
+        background-color: $color-background-light;
+
+        grid-column: col-start 5 / center-end;
+    }
+}

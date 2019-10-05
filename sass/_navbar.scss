@@ -1,0 +1,33 @@
+.navbar {
+    background-color: $color-primary;
+
+    grid-column: full-start / full-end;
+}
+
+.nav {
+    font-size: 1.8rem;
+
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(8, minmax(min-content, 1fr));
+    grid-template-rows: 5rem;
+
+    &__item {
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: #fff;
+        text-decoration: none;
+        font-family: $font-primary;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+    }
+
+    &__link:hover,
+    &__link:active {
+        background-color: $color-primary-light;
+    }
+}
