@@ -1,13 +1,22 @@
 .about {
     &__text {
-        background-color: $color-background;
-
-        grid-column: center-start / col-end 4;
+        grid-column: col-start 5 / center-end;
     }
 
     &__pictures {
-        background-color: $color-background-light;
+        grid-column: center-start / col-end 4;
+        display: flex;
+        align-items: center;
+    }
 
-        grid-column: col-start 5 / center-end;
+    &__picture {
+        width: 90%;
+        display: block;
+    }
+
+    &__description {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        width: 100%;
     }
 }

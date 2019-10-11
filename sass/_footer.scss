@@ -1,5 +1,6 @@
 .footer {
-    background-color: $color-grey-dark-2;
-
+    background-color: rgb(12, 12, 12);
     grid-column: full-start / full-end;
+
+    padding: 8rem;
 }

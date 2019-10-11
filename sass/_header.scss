@@ -2,20 +2,11 @@
     &__text {
         background-color: $color-background;
         grid-column: full-start / col-end 6;
-        padding: 10rem;
         padding-left: 25vw;
 
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: min-content min-content minmax(6rem, min-content) 1fr;
-        justify-content: start;
-    }
-
-    &__btn {
-        justify-self: start;
-        align-self: start;
-
-        margin-right: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     &__picture {
@@ -23,11 +14,31 @@
         background-color: $color-background;
 
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
     }
 
-    &__logo {
+    &__description {
+        margin-top: 1.5rem;
+        margin-bottom: 8rem;
+    }
+
+    &__btn {
+        margin-right: 1.5rem;
+    }
+
+    &__scroll {
+        grid-row: 3;
+        grid-column: full-start / full-end;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    &__icon {
+        fill: $color-grey-dark-2;
+        height: 4.5rem;
+        width: 4.5rem;
     }
 }
 

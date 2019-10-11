@@ -1,5 +1,5 @@
 %heading {
-    font-family: $font-primary;
+    font-family: $font-secondary;
     font-weight: 400;
 }
 
@@ -13,32 +13,46 @@
 
 .heading-2 {
     @extend %heading;
-    font-size: 2.4rem;
+    font-size: 4rem;
     font-weight: 300;
-    font-style: italic;
 }
 
 .heading-3 {
     @extend %heading;
-    font-size: 1.9rem;
-    font-family: $font-secondary;
+    font-size: 2.5rem;
     color: $color-grey-light-2;
+    font-family: $font-primary;
 }
 
 .heading-4 {
     @extend %heading;
-    font-size: 1.9rem;
+    font-size: 3rem;
+    font-family: $font-primary;
+
+    &::after {
+        content: '';
+        height: 1px;
+        width: 100%;
+        display: block;
+        background-color: white;
+    }
+}
+
+.heading-5 {
+    @extend %heading;
+    font-size: 2rem;
+    color: $color-grey-dark-0;
+    font-weight: 400;
 }
 
 .btn {
     background-color: $color-grey-dark-2;
     color: #fff;
     border: none;
-    border-radius: 0;
     font-family: $font-primary;
     font-size: 1.65rem;
     text-transform: uppercase;
-    padding: 1.5rem 3.2rem;
+    padding: 1.5rem 2.8rem;
     cursor: pointer;
     transition: background-color 0.25s, transform 0.25s, box-shadow 0.25s;
     border-radius: 0.5rem;
@@ -48,4 +62,27 @@
         transform: translateY(-0.5rem);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.548);
     }
+}
+
+.weighted {
+    font-family: $font-primary;
+    color: $color-grey-dark-0;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.mb-largest {
+    margin-bottom: 8rem;
+}
+
+.mb-large {
+    margin-bottom: 6rem;
+}
+
+.mb-medium {
+    margin-bottom: 4rem;
+}
+
+.mb-small {
+    margin-bottom: 2rem;
 }

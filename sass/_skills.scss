@@ -1,5 +1,67 @@
 .skills {
-    background-color: $color-secondary;
-
     grid-column: center-start / center-end;
+
+    margin: 15rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 45rem 45rem;
+    grid-gap: 5rem;
+}
+
+.skill {
+    background-color: #242424;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    transition: transform 0.25s, box-shadow 0.25s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:hover {
+        transform: translateY(-1rem);
+        box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+    }
+
+    &__icons {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(12, 12, 12);
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    &__icon {
+        height: 60%;
+        width: 60%;
+    }
+
+    &__description {
+        padding: 1rem 3rem 2rem 3rem;
+        flex: 0 0 70%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: auto;
+        margin-top: 1rem;
+        font-size: 1.7rem;
+    }
+
+    &__learn {
+        font-size: 1.4rem;
+    }
+
+    &__date {
+        font-style: italic;
+        color: $color-grey-dark-0;
+        font-weight: 400;
+    }
 }

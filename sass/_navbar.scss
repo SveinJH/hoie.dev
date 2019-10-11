@@ -3,6 +3,7 @@
     grid-column: full-start / full-end;
     font-size: 1.7rem;
     list-style: none;
+    line-height: 1;
 
     display: grid;
     grid-template-columns: 1fr repeat(4, minmax(min-content, 1fr)) 1fr;
@@ -10,23 +11,24 @@
     box-shadow: 0 0.7rem 0.8rem rgba(0, 0, 0, 0.445);
     z-index: 1;
 
-    &__item {
+    &__icon {
+        fill: #fff;
+        height: 2.25rem;
+        width: 2.25rem;
+        margin-right: 1.25rem;
     }
 
     &__link:link,
     &__link:visited {
         display: flex;
-        align-items: center;
         justify-content: center;
+        align-items: center;
 
         height: 100%;
         width: 100%;
         color: $color-font-primary;
         text-decoration: none;
-        font-family: $font-primary;
         text-transform: uppercase;
-        text-align: center;
-
         transition: background-color 0.27s;
     }
 
