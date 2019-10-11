@@ -52,15 +52,20 @@
         </ul>
 
         <div class="header__text">
-            <div class="header__text--name">
-                <h1 class="heading-1">Svein Jakob H&oslash;ie</h1>
-                <h3 class="heading-3 header__description">
-                    21 year old <span class="description">developer</span>
-                </h3>
+            <div class="header__figure-box">
+                <img src="img/figure.svg" alt="Figure" class="header__figure" />
             </div>
-            <div class="header__btns">
-                <button class="header__btn btn">Read more</button>
-                <button class="header__btn btn">Contact me</button>
+            <div class="header__text-box">
+                <div class="header__text--name">
+                    <h1 class="heading-1">Svein Jakob H&oslash;ie</h1>
+                    <h3 class="heading-3 header__description">
+                        21 year old <span class="description">developer</span>
+                    </h3>
+                </div>
+                <div class="header__btns">
+                    <button class="header__btn btn">Read more</button>
+                    <button class="header__btn btn">Contact me</button>
+                </div>
             </div>
         </div>
 
@@ -73,17 +78,12 @@
         </div>
 
         <div class="header__scroll">
-            <svg class="header__icon">
-                <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
-            </svg>
-        </div>
-
-        <div class="about__pictures">
-            <img
-                src="img/undraw_programming_2svr.svg"
-                alt="About Picture"
-                class="about__picture"
-            />
+            <a href="#" class="header__scroll-icon"
+                ><svg class="header__icon">
+                    <use
+                        xlink:href="img/sprite.svg#icon-chevron-down"
+                    ></use></svg
+            ></a>
         </div>
 
         <div class="about__text">
@@ -105,6 +105,14 @@
             </p>
         </div>
 
+        <div class="about__pictures">
+            <img
+                src="img/undraw_programming_2svr.svg"
+                alt="About Picture"
+                class="about__picture"
+            />
+        </div>
+
         <div class="skills">
             <figure class="skill">
                 <div class="skill__icons">
@@ -114,11 +122,14 @@
                     <svg class="skill__icon">
                         <use xlink:href="img/sprite.svg#icon-css3"></use>
                     </svg>
+                    <svg class="skill__icon">
+                        <use xlink:href="img/sprite.svg#icon-sass"></use>
+                    </svg>
                 </div>
                 <div class="skill__description">
-                    <h5 class="heading-5">HTML5 & CSS3</h5>
+                    <h5 class="heading-5">HTML5, CSS3 & Sass</h5>
                     <p class="skill__text">
-                        HTML5 and CSS3 are both technologies that I feel
+                        HTML5, CSS3 and Sass are all technologies that I feel
                         comfortable with using. In my projects I use both CSS
                         Grid and Flexbox in order to achieve the result I want.
                     </p>
@@ -135,7 +146,7 @@
                     </svg>
                 </div>
                 <div class="skill__description">
-                    <h5 class="heading-5">JavaScript</h5>
+                    <h5 class="heading-5">Javascript</h5>
                     <p class="skill__text">
                         JavaScript is my favourite programming language out
                         there thus far. Its flexibility combined with the number
@@ -168,16 +179,19 @@
             </figure>
             <figure class="skill">
                 <div class="skill__icons">
-                    <svg class="skill__icon">
-                        <use xlink:href="img/sprite.svg#icon-java"></use>
+                    <svg class="skill__icon icon--light">
+                        <use xlink:href="img/sprite.svg#icon-github"></use>
+                    </svg>
+                    <svg class="skill__icon icon--light">
+                        <use xlink:href="img/sprite.svg#icon-git"></use>
                     </svg>
                 </div>
                 <div class="skill__description">
-                    <h5 class="heading-5">Java</h5>
+                    <h5 class="heading-5">Version control</h5>
                     <p class="skill__text">
-                        Java is the language I am most proficient in as of now.
-                        It's the language we started with in my first year at
-                        university, and that I have coded in for over a year.
+                        I keep my projects safe and organised in one place with
+                        GIT version control. With GIT I have access to my
+                        projects wherever I am.
                     </p>
                     <div class="skill__learn">
                         Started learning in
@@ -188,38 +202,40 @@
             <figure class="skill">
                 <div class="skill__icons">
                     <svg class="skill__icon">
-                        <use xlink:href="img/sprite.svg#icon-java"></use>
+                        <use xlink:href="img/sprite.svg#icon-npm"></use>
                     </svg>
                 </div>
                 <div class="skill__description">
-                    <h5 class="heading-5">Java</h5>
+                    <h5 class="heading-5">NPM</h5>
                     <p class="skill__text">
-                        Java is the language I am most proficient in as of now.
-                        It's the language we started with in my first year at
-                        university, and that I have coded in for over a year.
+                        In all my projects I use NPM in order to download
+                        necessary dependencies. Whether it is a CSS
+                        pre-processors like Sass, a simple live-server or even a
+                        slugifier.
                     </p>
                     <div class="skill__learn">
                         Started learning in
-                        <span class="skill__date">August 2018</span>.
+                        <span class="skill__date">March 2019</span>.
                     </div>
                 </div>
             </figure>
             <figure class="skill">
                 <div class="skill__icons">
                     <svg class="skill__icon">
-                        <use xlink:href="img/sprite.svg#icon-java"></use>
+                        <use xlink:href="img/sprite.svg#icon-netlify"></use>
                     </svg>
                 </div>
                 <div class="skill__description">
-                    <h5 class="heading-5">Java</h5>
+                    <h5 class="heading-5">Netlify</h5>
                     <p class="skill__text">
-                        Java is the language I am most proficient in as of now.
-                        It's the language we started with in my first year at
-                        university, and that I have coded in for over a year.
+                        In order to deploy my projects I use Netlify. Netlify is
+                        a simple and great tool for me in order to take control
+                        over my domains and host my desired websites in an
+                        organised way.
                     </p>
                     <div class="skill__learn">
                         Started learning in
-                        <span class="skill__date">August 2018</span>.
+                        <span class="skill__date">September 2019</span>.
                     </div>
                 </div>
             </figure>
@@ -227,8 +243,10 @@
 
         <div class="projects">
             <div class="projects__header">
-                <h2 class="heading-2 mb-medium">My projects</h2>
-                <p class="projects__text mb-medium">
+                <h2 class="heading-2 mb-small">
+                    My projects
+                </h2>
+                <p class="projects__header--text mb-medium">
                     Below I have made a collection of projects I have completed.
                     Feel free to check out both the live version and also visit
                     the source code on GitHub should you be interested.
@@ -236,7 +254,7 @@
             </div>
             <div class="projects__container">
                 <div class="project">
-                    <h3 class="heading-4">CruiseFix</h3>
+                    <h3 class="heading-4 mb-small">CruiseFix</h3>
                     <img
                         src="img/project-2.JPG"
                         alt="Nexter project"
@@ -252,9 +270,6 @@
                         This project was done as an assigment in a course at
                         university called 'Webdevelopment 1'. It is a booking
                         page for a fictional company called CruiseFix.
-                        <br /><br />The project includes simple animations made
-                        possible with jQuery. Positioning was done 'the old way'
-                        with absolute positioning and floats.
                     </p>
                     <div class="project__btns">
                         <button class="project__btn btn">
@@ -277,7 +292,7 @@
                 </div>
 
                 <div class="project">
-                    <h3 class="heading-4">Nexter</h3>
+                    <h3 class="heading-4 mb-small">Nexter</h3>
                     <img
                         src="img/project-1.JPG"
                         alt="Nexter project"
@@ -291,11 +306,7 @@
                     </div>
                     <p class="project__description">
                         I made this website in an online course called 'Advanced
-                        CSS and Sass' by Jonas Schmedtmann. <br /><br />
-                        In this project, CSS Grid is the main building brick.
-                        All items are laid out with the awesome tool that Grid
-                        is. Flexbox is also used when positioning
-                        one-dimensional rows / columns.
+                        CSS and Sass' by Jonas Schmedtmann.
                     </p>
 
                     <div class="project__btns">
@@ -319,26 +330,21 @@
                 </div>
 
                 <div class="project">
-                    <h3 class="heading-4">Trillo</h3>
+                    <h3 class="heading-4 mb-small">Trillo</h3>
                     <img
                         src="img/project-3.JPG"
                         alt="Nexter project"
                         class="project__img"
                     />
                     <div class="project__skills">
-                        <div class="project__skill">Html</div>
-                        <div class="project__skill">Css</div>
-                        <div class="project__skill">Css Flexbox</div>
-                        <div class="project__skill">Sass</div>
+                        <p class="project__skill">Html</p>
+                        <p class="project__skill">Css</p>
+                        <p class="project__skill">Css Flexbox</p>
+                        <p class="project__skill">Sass</p>
                     </div>
                     <p class="project__description">
                         This project was also made in relation to the course
-                        'Advanced CSS and Sass' by Jonas Schmedtmann.<br /><br />
-                        Trillo is a fictional company that handles bookings for
-                        travelling to exotic places. This project is made up by
-                        extensively using the great tool CSS Flexbox. There are
-                        also several advanced animations on the website, made by
-                        plain CSS.
+                        'Advanced CSS and Sass' by Jonas Schmedtmann.
                     </p>
 
                     <div class="project__btns">

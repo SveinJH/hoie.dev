@@ -54,7 +54,7 @@ body > * {
 
 .container {
     display: grid;
-    grid-template-rows: 6rem calc(100vh - 14rem) 18rem repeat(6, min-content);
+    grid-template-rows: 6rem calc(100vh - 12rem) 6rem repeat(6, min-content);
     grid-template-columns:
         [full-start] minmax(6rem, 1fr) [center-start] repeat(
             8,

@@ -1,84 +1,102 @@
 .projects {
-    background-color: $color-background-light;
+    background-color: $color-grey-dark-2;
+    padding: 4rem;
+
     grid-column: full-start / full-end;
 
-    padding: 2rem 25rem;
+    display: flex;
+    flex-direction: column;
 
     &__header {
+        text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 5rem;
+
+        &--text {
+            font-size: 1.6rem;
+            width: 50%;
+        }
     }
 
     &__container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-row-gap: 11rem;
-        grid-column-gap: 25rem;
-    }
+        grid-auto-rows: 70rem;
+        grid-gap: 3rem;
+        grid-column-gap: 4vw;
 
-    &__text {
-        font-family: $font-secondary;
-        font-size: 1.8rem;
-        width: 50%;
-        text-align: center;
+        margin: 0 4rem;
     }
 }
 
 .project {
-    display: grid;
-    grid-template-rows: repeat(4, min-content);
-    justify-items: center;
-    grid-row-gap: 1.8rem;
+    background-color: $color-background;
+    margin: 3rem;
+    padding: 1rem 0 3rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+        transform: translateY(-0.5rem);
+    }
 
     &__img {
-        display: block;
-        width: 90%;
-
-        border-radius: 0.6rem;
-        box-shadow: 0 1.1rem 1rem rgb(14, 14, 14);
+        width: 85%;
+        border-radius: 0.5rem;
     }
 
     &__skills {
-        justify-self: stretch;
+        align-self: stretch;
+
         font-size: 1.5rem;
+        margin: 1rem 1rem 2rem 1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+
         display: flex;
         justify-content: space-evenly;
-        align-items: center;
-        text-transform: uppercase;
     }
 
     &__skill {
-        padding: 1.2rem 1.8rem 0.7rem 1.8rem;
-        line-height: 1;
-        background-color: $color-grey-dark-0;
-        font-weight: 400;
-        border-radius: 3rem;
-        box-shadow: 0 1rem 1.5rem #111;
+        background-color: $color-grey-dark-2;
+        padding: 0.3rem 1.5rem;
+        border-radius: 4rem;
     }
 
     &__description {
-        margin-top: 1.2rem;
-        width: 75%;
-        text-align: center;
+        width: 70%;
         font-size: 1.6rem;
         font-family: $font-secondary;
+        margin-bottom: auto;
+        text-align: center;
+    }
+
+    &__icon {
+        height: 1.5rem;
+        width: 1.5rem;
+        fill: #fff;
+        margin-right: 0.6rem;
+        transform: translateY(-2px);
+    }
+
+    &__btns {
+        display: flex;
     }
 
     &__btn {
-        border-radius: 3rem;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
 
         &:first-of-type {
             margin-right: 2rem;
         }
-    }
-
-    &__icon {
-        fill: #fff;
-        height: 1.75rem;
-        width: 1.75rem;
-        margin-right: 0.2rem;
-        transform: translateY(2px);
     }
 }

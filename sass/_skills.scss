@@ -5,7 +5,7 @@
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 45rem 45rem;
+    grid-template-rows: 42rem 42rem;
     grid-gap: 5rem;
 }
 
@@ -40,7 +40,7 @@
     }
 
     &__description {
-        padding: 1rem 3rem 2rem 3rem;
+        padding: 1rem 3rem 4rem 3rem;
         flex: 0 0 70%;
 
         display: flex;

@@ -43,6 +43,7 @@
     font-size: 2rem;
     color: $color-grey-dark-0;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .btn {
@@ -50,9 +51,9 @@
     color: #fff;
     border: none;
     font-family: $font-primary;
-    font-size: 1.65rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
-    padding: 1.5rem 2.8rem;
+    padding: 1.4rem 2.4rem;
     cursor: pointer;
     transition: background-color 0.25s, transform 0.25s, box-shadow 0.25s;
     border-radius: 0.5rem;
@@ -85,4 +86,11 @@
 
 .mb-small {
     margin-bottom: 2rem;
+}
+
+// ICON COLORS
+.icon {
+    &--light {
+        fill: #d6d6d6;
+    }
 }

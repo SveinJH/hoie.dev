@@ -2,8 +2,22 @@
     &__text {
         background-color: $color-background;
         grid-column: full-start / col-end 6;
-        padding-left: 25vw;
 
+        display: flex;
+    }
+
+    &__figure-box {
+        margin-right: auto;
+
+        display: flex;
+    }
+
+    &__figure {
+        height: 110%;
+        transform: translateY(8rem);
+    }
+
+    &__text-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
