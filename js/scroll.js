@@ -28,6 +28,8 @@ const scrollToContact = () => {
     contact.scrollIntoView({ behavior: 'smooth' });
 };
 
+console.log('test');
+
 // Event listeners
 scrollBtn.addEventListener('click', scrollToAbout);
 aboutBtn.addEventListener('click', scrollToAbout);
@@ -36,3 +38,13 @@ projectsBtn.addEventListener('click', scrollToProjects);
 contactBtn.addEventListener('click', scrollToContact);
 readMoreBtn.addEventListener('click', scrollToAbout);
 contactMeBtn.addEventListener('click', scrollToContact);
+
+// TYPEIT
+new TypeIt('#typeIt', {
+    strings: ['developer', 'student', 'norwegian', 'creator'],
+    breakLines: false,
+    loop: true,
+    speed: 125,
+    startDelay: 400,
+    nextStringDelay: 1000
+}).go();
