@@ -34,7 +34,7 @@
 
     &__container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
         grid-auto-rows: min-content;
         grid-gap: 2rem;
         grid-column-gap: 2vw;
@@ -47,7 +47,7 @@
 
         @media only screen and (max-width: $bp-mostsmallest) {
             grid-column-gap: 3vw;
-            margin: 0 0.5rem 0 0.2rem;
+            padding: 1rem 1.5rem;
         }
     }
 }
@@ -65,7 +65,7 @@
     align-items: center;
 
     @media only screen and (max-width: $bp-mostsmallest) {
-        margin: 2rem;
+        margin: 1rem;
     }
 
     &:hover {
