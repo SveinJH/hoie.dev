@@ -415,7 +415,7 @@ body > * {
     @media only screen and (max-width: 28.125em) {
       .projects__container {
         grid-column-gap: 3vw;
-        margin: 0 0.2rem; } }
+        margin: 0 0.5rem 0 0.2rem; } }
 
 .project {
   background-color: #242424;
@@ -429,7 +429,7 @@ body > * {
   align-items: center; }
   @media only screen and (max-width: 28.125em) {
     .project {
-      margin: 1rem; } }
+      margin: 0.5rem; } }
   .project:hover {
     transform: translateY(-0.5rem); }
   .project__img {

@@ -47,7 +47,7 @@
 
         @media only screen and (max-width: $bp-mostsmallest) {
             grid-column-gap: 3vw;
-            margin: 0 0.2rem;
+            margin: 0 0.5rem 0 0.2rem;
         }
     }
 }
@@ -65,7 +65,7 @@
     align-items: center;
 
     @media only screen and (max-width: $bp-mostsmallest) {
-        margin: 1rem;
+        margin: 0.5rem;
     }
 
     &:hover {
