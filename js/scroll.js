@@ -28,8 +28,6 @@ const scrollToContact = () => {
     contact.scrollIntoView({ behavior: 'smooth' });
 };
 
-console.log('test');
-
 // Event listeners
 scrollBtn.addEventListener('click', scrollToAbout);
 aboutBtn.addEventListener('click', scrollToAbout);
