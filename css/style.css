@@ -5,11 +5,16 @@
   padding: 0;
   box-sizing: inherit; }
 
+html,
+body {
+  overflow-x: hidden; }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
 body {
+  max-width: 100%;
   font-family: "Josefin Sans", sans-serif;
   color: #f3f3f3;
   font-weight: 300;
@@ -144,8 +149,7 @@ body > * {
   display: flex; }
 
 .header__figure-box {
-  margin-right: auto;
-  display: flex; }
+  margin-right: auto; }
 
 .header__figure {
   height: 110%;

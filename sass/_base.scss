@@ -30,12 +30,18 @@ $font-secondary: 'Montserrat', sans-serif;
     box-sizing: inherit;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%;
 }
 
 body {
+    max-width: 100%;
     font-family: $font-primary;
     color: $color-font-primary;
     font-weight: 300;
