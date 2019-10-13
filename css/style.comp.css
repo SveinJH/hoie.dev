@@ -34,7 +34,7 @@ body > * {
 .container {
   display: grid;
   grid-template-rows: 6rem calc(100vh - 12rem) 6rem;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(0.5rem, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(0.5rem, 14rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end]; }
   @media only screen and (max-width: 48.2em) {
     .container {
       grid-template-rows: 6rem calc(100vh - 20rem) 6rem; } }
@@ -405,24 +405,32 @@ body > * {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
     grid-auto-rows: min-content;
-    grid-gap: 3rem;
-    grid-column-gap: 4vw;
+    grid-gap: 2rem;
+    grid-column-gap: 2vw;
     margin: 0 2rem; }
     @media only screen and (max-width: 68.75em) {
       .projects__container {
         grid-column-gap: 3vw;
         margin: 0 1rem; } }
+    @media only screen and (max-width: 28.125em) {
+      .projects__container {
+        grid-column-gap: 3vw;
+        padding: 1rem 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr)); } }
 
 .project {
   background-color: #242424;
-  margin: 3rem;
-  padding: 1rem 0 2rem 0;
+  margin: 2rem;
+  padding: 1rem 0.5rem 2rem 0.5rem;
   border-radius: 1rem;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
   transition: transform 0.2s;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  @media only screen and (max-width: 28.125em) {
+    .project {
+      margin: 1rem; } }
   .project:hover {
     transform: translateY(-0.5rem); }
   .project__img {
@@ -447,11 +455,15 @@ body > * {
         font-size: 1.8rem; } }
     @media only screen and (max-width: 28.125em) {
       .project__skills {
-        font-size: 1.5rem; } }
+        font-size: 1.4rem; } }
   .project__skill {
     background-color: #1c5b77;
     padding: 0.3rem 1.5rem;
+    margin: 0 0.2rem;
     border-radius: 4rem; }
+    @media only screen and (max-width: 28.125em) {
+      .project__skill {
+        padding: 0.2rem 1rem; } }
   .project__description {
     width: 80%;
     font-size: 1.6rem;
