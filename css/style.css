@@ -97,6 +97,9 @@ body > * {
 .mb-small {
   margin-bottom: 2rem; }
 
+.mr-medium {
+  margin-right: 4rem; }
+
 .icon--light {
   fill: #d6d6d6; }
 
@@ -116,18 +119,24 @@ body > * {
     height: 2.25rem;
     width: 2.25rem;
     margin-right: 1.25rem; }
-  .nav__link:link, .nav__link:visited {
+  .nav__link {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
+    border: none;
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
     color: #f3f3f3;
-    text-decoration: none;
+    background-color: #1c5b77;
     text-transform: uppercase;
     transition: background-color 0.27s; }
-  .nav__link:hover, .nav__link:active {
-    background-color: #1f6585; }
+  .nav__link:focus {
+    outline: none; }
+  .nav__link:hover {
+    background-color: #1f6585;
+    cursor: pointer; }
 
 .header__text {
   background-color: #1d1d1d;
@@ -171,6 +180,9 @@ body > * {
   fill: #1c5b77;
   height: 4.5rem;
   width: 4.5rem; }
+  .header__icon:hover {
+    transform: translateY(-4px);
+    cursor: pointer; }
 
 .description {
   color: #fff; }
@@ -255,7 +267,7 @@ body > * {
     flex-direction: column;
     align-items: center; }
     .projects__header--text {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
       width: 50%; }
   .projects__container {
     display: grid;
@@ -315,8 +327,34 @@ body > * {
       margin-right: 2rem; }
 
 .contact {
-  background-color: #dddddd;
-  grid-column: center-start / center-end; }
+  font-family: "Montserrat", sans-serif;
+  grid-column: center-start / center-end;
+  padding: 6rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contact__text-talk {
+    font-weight: bold;
+    font-size: 2.2rem; }
+  .contact__text {
+    font-size: 1.8rem; }
+  .contact__email:link, .contact__email:visited {
+    text-decoration: none;
+    color: #227093;
+    font-size: 4rem;
+    flex: 1; }
+  .contact__sm-text {
+    font-size: 1.6rem; }
+  .contact__sm-icons {
+    display: flex; }
+  .contact__sm-icon {
+    width: 7rem;
+    height: 7rem;
+    fill: #eee;
+    transition: fill 0.2s; }
+    .contact__sm-icon:hover {
+      fill: #1c5b77; }
 
 .footer {
   background-color: #0c0c0c;

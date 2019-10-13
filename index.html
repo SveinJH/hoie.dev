@@ -16,38 +16,38 @@
         <ul class="nav">
             <li class="nav__item"></li>
             <li class="nav__item">
-                <a href="@" class="nav__link">
+                <button class="nav__link aboutBtn">
                     <svg class="nav__icon">
                         <use xlink:href="img/sprite.svg#icon-user"></use>
                     </svg>
                     <p>About</p>
-                </a>
+                </button>
             </li>
             <li class="nav__item">
-                <a href="@" class="nav__link"
-                    ><svg class="nav__icon">
+                <button class="nav__link skillsBtn">
+                    <svg class="nav__icon">
                         <use
                             xlink:href="img/sprite.svg#icon-equalizer"
                         ></use></svg
-                    >Skills</a
-                >
+                    >Skills
+                </button>
             </li>
             <li class="nav__item">
-                <a href="@" class="nav__link"
-                    ><svg class="nav__icon">
+                <button class="nav__link projectsBtn">
+                    <svg class="nav__icon">
                         <use xlink:href="img/sprite.svg#icon-files-empty"></use>
                     </svg>
-                    <p>Projects</p></a
-                >
+                    Projects
+                </button>
             </li>
             <li class="nav__item">
-                <a href="@" class="nav__link"
-                    ><svg class="nav__icon">
+                <button class="nav__link contactBtn">
+                    <svg class="nav__icon">
                         <use
                             xlink:href="img/sprite.svg#icon-envelop"
                         ></use></svg
-                    >Contact</a
-                >
+                    >Contact
+                </button>
             </li>
         </ul>
 
@@ -63,8 +63,12 @@
                     </h3>
                 </div>
                 <div class="header__btns">
-                    <button class="header__btn btn">Read more</button>
-                    <button class="header__btn btn">Contact me</button>
+                    <button class="header__btn btn readMoreBtn">
+                        Read more
+                    </button>
+                    <button class="header__btn btn contactMeBtn">
+                        Contact me
+                    </button>
                 </div>
             </div>
         </div>
@@ -78,15 +82,12 @@
         </div>
 
         <div class="header__scroll">
-            <a href="#" class="header__scroll-icon"
-                ><svg class="header__icon">
-                    <use
-                        xlink:href="img/sprite.svg#icon-chevron-down"
-                    ></use></svg
-            ></a>
+            <svg class="header__icon">
+                <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+            </svg>
         </div>
 
-        <div class="about__text">
+        <div class="about__text" name="about">
             <h2 class="heading-2">About me</h2>
             <p class="about__description">
                 My name is Svein Jakob and I am 21 years of age. I live in
@@ -190,7 +191,7 @@
                     <h5 class="heading-5">Version control</h5>
                     <p class="skill__text">
                         I keep my projects safe and organised in one place with
-                        GIT version control. With GIT I have access to my
+                        GIT version control. With GIT I have full access to my
                         projects wherever I am.
                     </p>
                     <div class="skill__learn">
@@ -254,6 +255,48 @@
             </div>
             <div class="projects__container">
                 <div class="project">
+                    <h3 class="heading-4 mb-small">hoie.dev</h3>
+                    <img
+                        src="img/project-2.JPG"
+                        alt="Nexter project"
+                        class="project__img"
+                    />
+                    <div class="project__skills">
+                        <p class="project__skill">Html</p>
+                        <p class="project__skill">Css</p>
+                        <p class="project__skill">Sass</p>
+                        <p class="project__skill">JavaScript</p>
+                    </div>
+                    <p class="project__description">
+                        The website you're visiting now!
+                    </p>
+                    <div class="project__btns">
+                        <button
+                            onclick="window.location.href = 'https://folk.ntnu.no/sveijh/Prosjekt WU1/';"
+                            class="project__btn btn"
+                        >
+                            <svg class="project__icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-hand"
+                                ></use>
+                            </svg>
+                            Visit now
+                        </button>
+                        <button
+                            class="project__btn btn"
+                            onclick="window.location.href = 'https://github.com/SveinJH/CruiseFix';"
+                        >
+                            <svg class="project__icon">
+                                <use
+                                    xlink:href="img/sprite.svg#icon-github"
+                                ></use>
+                            </svg>
+                            Source code
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project">
                     <h3 class="heading-4 mb-small">CruiseFix</h3>
                     <img
                         src="img/project-2.JPG"
@@ -269,10 +312,15 @@
                     <p class="project__description">
                         This project was done as an assigment in a course at
                         university called 'Webdevelopment 1'. It is a booking
-                        page for a fictional company called CruiseFix.
+                        page for a fictional company called CruiseFix. This
+                        website was build 'the old way', without CSS Grid nor
+                        Flexbox.
                     </p>
                     <div class="project__btns">
-                        <button class="project__btn btn">
+                        <button
+                            onclick="window.location.href = 'https://folk.ntnu.no/sveijh/Prosjekt WU1/';"
+                            class="project__btn btn"
+                        >
                             <svg class="project__icon">
                                 <use
                                     xlink:href="img/sprite.svg#icon-hand"
@@ -280,7 +328,10 @@
                             </svg>
                             Visit now
                         </button>
-                        <button class="project__btn btn">
+                        <button
+                            class="project__btn btn"
+                            onclick="window.location.href = 'https://github.com/SveinJH/CruiseFix';"
+                        >
                             <svg class="project__icon">
                                 <use
                                     xlink:href="img/sprite.svg#icon-github"
@@ -306,11 +357,16 @@
                     </div>
                     <p class="project__description">
                         I made this website in an online course called 'Advanced
-                        CSS and Sass' by Jonas Schmedtmann.
+                        CSS and Sass' by Jonas Schmedtmann. It is the homepage
+                        of a fictional real estate company. The site is built
+                        with CSS Grid as the main building brick.
                     </p>
 
                     <div class="project__btns">
-                        <button class="project__btn btn">
+                        <button
+                            onclick="window.location.href = 'https://nexter.hoie.dev';"
+                            class="project__btn btn"
+                        >
                             <svg class="project__icon">
                                 <use
                                     xlink:href="img/sprite.svg#icon-hand"
@@ -318,7 +374,10 @@
                             </svg>
                             Visit now
                         </button>
-                        <button class="project__btn btn">
+                        <button
+                            onclick="window.location.href = 'https://github.com/SveinJH/nexter';"
+                            class="project__btn btn"
+                        >
                             <svg class="project__icon">
                                 <use
                                     xlink:href="img/sprite.svg#icon-github"
@@ -344,11 +403,17 @@
                     </div>
                     <p class="project__description">
                         This project was also made in relation to the course
-                        'Advanced CSS and Sass' by Jonas Schmedtmann.
+                        'Advanced CSS and Sass' by Jonas Schmedtmann. This
+                        website is the landing page for a fictonal travel
+                        agency. The page is focused around CSS Flexbox and
+                        includes simple animations.
                     </p>
 
                     <div class="project__btns">
-                        <button class="project__btn btn">
+                        <button
+                            onclick="window.location.href = 'https://trillo.hoie.dev';"
+                            class="project__btn btn"
+                        >
                             <svg class="project__icon">
                                 <use
                                     xlink:href="img/sprite.svg#icon-hand"
@@ -356,7 +421,10 @@
                             </svg>
                             Visit now
                         </button>
-                        <button class="project__btn btn">
+                        <button
+                            onclick="window.location.href = 'https://github.com/SveinJH/trillo';"
+                            class="project__btn btn"
+                        >
                             <svg class="project__icon">
                                 <use
                                     xlink:href="img/sprite.svg#icon-github"
@@ -370,7 +438,32 @@
         </div>
 
         <div class="contact">
-            CONTACT
+            <div class="mb-small heading-2">Contact me</div>
+            <div class="contact__text mb-small">
+                If you have questions or simply want to get in touch, please do
+                <em>not</em> hesitate!<br /><span class="contact__text-talk"
+                    >Let's talk.</span
+                >
+            </div>
+            <a
+                class="contact__email mb-medium"
+                href="mailto: sveinjakob@hoie.dev"
+                >sveinjakob@hoie.dev</a
+            >
+            <div class="contact__sm-text mb-small">
+                You can also find me here
+            </div>
+            <div class="contact__sm-icons">
+                <a href="https://github.com/sveinjh"
+                    ><svg class="contact__sm-icon mr-medium">
+                        <use xlink:href="img/sprite.svg#icon-github"></use></svg
+                ></a>
+                <a href="#"
+                    ><svg class="contact__sm-icon">
+                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </div>
         </div>
 
         <footer class="footer">
@@ -380,6 +473,6 @@
             </p>
         </footer>
 
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+        <script src="js/scroll.js"></script>
     </body>
 </html>

@@ -53,6 +53,11 @@
         fill: $color-grey-dark-2;
         height: 4.5rem;
         width: 4.5rem;
+
+        &:hover {
+            transform: translateY(-4px);
+            cursor: pointer;
+        }
     }
 }
 
