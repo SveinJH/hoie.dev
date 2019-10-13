@@ -429,7 +429,7 @@ body > * {
   align-items: center; }
   @media only screen and (max-width: 28.125em) {
     .project {
-      margin: 0.5rem; } }
+      margin: 2rem; } }
   .project:hover {
     transform: translateY(-0.5rem); }
   .project__img {
