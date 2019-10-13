@@ -2,23 +2,50 @@
     &__text {
         background-color: $color-background;
         grid-column: full-start / col-end 6;
+        width: 100%;
 
         display: flex;
-    }
 
-    &__figure-box {
-        margin-right: auto;
+        @media only screen and (max-width: $bp-medium) {
+            justify-content: center;
+            grid-column: full-start / col-end 5;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            align-items: start;
+            margin-top: 20rem;
+            grid-column: center-start / center-end;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            grid-column: center-start / center-end;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            grid-column: full-start / full-end;
+        }
     }
 
     &__figure {
-        height: 110%;
-        transform: translateY(8rem);
+        margin-right: auto;
+        height: 100%;
+        transform: translateY(10rem);
+
+        @media only screen and (max-width: $bp-largest) {
+            transform: translateY(15rem);
+            height: 90%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            display: none;
+        }
     }
 
     &__text-box {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        white-space: nowrap;
     }
 
     &__picture {
@@ -28,11 +55,37 @@
         display: flex;
         justify-content: start;
         align-items: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-column: col-start 6 / full-end;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            align-items: start;
+            margin-top: 20rem;
+            grid-column: col-start 5 / full-end;
+        }
+
+        @media only screen and (max-width: $bp-smaller) {
+            display: none;
+        }
     }
 
     &__description {
         margin-top: 1.5rem;
         margin-bottom: 8rem;
+
+        @media only screen and (max-width: $bp-large) {
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__logo {
+        width: 94%;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 100%;
+        }
     }
 
     &__btn {

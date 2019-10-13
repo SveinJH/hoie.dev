@@ -5,20 +5,30 @@
     list-style: none;
     line-height: 1;
 
-    display: grid;
-    grid-template-columns: 1fr repeat(4, minmax(min-content, 1fr)) 1fr;
-    grid-template-rows: 6rem;
+    display: flex;
+    justify-content: space-around;
     box-shadow: 0 0.7rem 0.8rem rgba(0, 0, 0, 0.445);
     z-index: 1;
+
+    @media only screen and (max-width: $bp-smallest) {
+        justify-content: center;
+    }
 
     &__icon {
         fill: #fff;
         height: 2.25rem;
         width: 2.25rem;
         margin-right: 1.25rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin: 0.5rem 0 0.8rem 0;
+            height: 2rem;
+            width: 2rem;
+        }
     }
 
     &__link {
+        padding: 0 8rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -32,6 +42,17 @@
         background-color: $color-grey-dark-2;
         text-transform: uppercase;
         transition: background-color 0.27s;
+
+        @media only screen and (max-width: $bp-medium) {
+            padding: 0 2rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     &__link:focus {

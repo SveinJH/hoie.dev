@@ -4,14 +4,14 @@
     margin: 15rem 0;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 42rem 42rem;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-template-rows: min-content;
     grid-gap: 5rem;
 }
 
 .skill {
     background-color: #242424;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
     transition: transform 0.25s, box-shadow 0.25s;
 
@@ -21,11 +21,12 @@
 
     &:hover {
         transform: translateY(-1rem);
-        box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.5);
+        box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.6);
     }
 
     &__icons {
-        flex: 1;
+        padding: 2rem;
+        flex: 0 0 30%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -35,13 +36,14 @@
     }
 
     &__icon {
-        height: 60%;
-        width: 60%;
+        height: 10rem;
+        width: 10rem;
+        padding: 1rem;
     }
 
     &__description {
-        padding: 1rem 3rem 4rem 3rem;
-        flex: 0 0 70%;
+        padding: 1rem 3rem 1rem 3rem;
+        flex: 1;
 
         display: flex;
         flex-direction: column;
@@ -50,12 +52,17 @@
     }
 
     &__text {
+        margin-top: 1.5rem;
+        font-size: 1.8rem;
         margin-bottom: auto;
-        margin-top: 1rem;
-        font-size: 1.7rem;
+
+        @media only screen and (max-width: $bp-small) {
+            font-size: 2rem;
+        }
     }
 
     &__learn {
+        margin-top: 2.5rem;
         font-size: 1.4rem;
     }
 
