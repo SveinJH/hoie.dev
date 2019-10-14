@@ -39,7 +39,7 @@ contactMeBtn.addEventListener('click', scrollToContact);
 
 // TYPEIT
 new TypeIt('#typeIt', {
-    strings: ['developer', 'student', 'norwegian', 'creator'],
+    strings: ['developer', 'student', 'norwegian', 'learner'],
     breakLines: false,
     loop: true,
     speed: 125,
